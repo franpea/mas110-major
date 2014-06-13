@@ -4,11 +4,20 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
+    <!-- STYLESHEETS -->
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
 
+    <!-- SCRIPTS -->
+    <script>function myFunction()
+	{
+	document.getElementById("ethics").innerHTML = "Spacewar!"
+	}
+	</script>
+
     <title>mas110-major by franpea</title>
+
   </head>
 
   <body>
@@ -20,10 +29,9 @@
         <h2>This is my major assignment for MAS110, Introduction to Digital Media.</h2>
 
         <section id="downloads">
-          <a href="https://github.com/franpea/mas110-major/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/franpea/mas110-major/tarball/master" class="btn">Download as .tar.gz</a>
-          <a href="https://github.com/franpea/mas110-major" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+ 	   <!-- REMOVED DOWNLOADS -->
         </section>
+
       </div>
     </header>
 
@@ -38,6 +46,11 @@
 		<p>Steven Levy tells the story in “Hackers: Heroes of the Computer Revolution”.  It was the late 1950s, early 1960s.  The scene: the Massachusetts Institute of Technology, or more specifically, the Tech Model Railway Club at MIT.  The members of this club became fascinated with a newly acquired computer, the TX-0.  In the course of their playful exploration of this computer a set of ideas and principles developed that eventually became known as the Hacker Ethic.</p>
 
 	<h3>Hacker Ethics</h3>
+
+
+		<p id="ethics">See what happens when you click the button.</p>
+		<button type="button" onclick="myFunction()">Hack Me</button>
+
 
 	<ul>
 		<li>Access to computers—and anything which might teach you something about the way the world works—should be unlimited and total. Always yield to the Hands-On Imperative!</li>
