@@ -12,7 +12,14 @@
     <!-- SCRIPTS -->
     <script>function myFunction()
 	{
-	document.getElementById("ethics").innerHTML = "Spacewar!"
+	ethics = new Array("All information should be free",
+	"Hackers should be judged by their hacking, not criteria such as degrees, age, race, sex, or position",
+	"Mistrust authority–Promote decentralisation")
+
+	ethicsCount = ethics.length
+
+	randomNum = Math.floor((Math.random()*ethicsCount))
+	document.getElementById("ethics").innerHTML = ethics[randomNum]
 	}
 	</script>
 
@@ -47,10 +54,7 @@
 
 	<h3>Hacker Ethics</h3>
 
-
-		<p id="ethics">See what happens when you click the button.</p>
-		<button type="button" onclick="myFunction()">Hack Me</button>
-
+		<button onclick="myFunction()">Hacker Ethics</button>
 
 	<ul>
 		<li>Access to computers—and anything which might teach you something about the way the world works—should be unlimited and total. Always yield to the Hands-On Imperative!</li>
